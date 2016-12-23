@@ -24,6 +24,5 @@ if(config('dotenveditor.activated')){
             Route::post(config('dotenveditor.route') . '/upload', 'Brotzka\DotenvEditor\Http\Controller\EnvController@upload');
             Route::get(config('dotenveditor.route') . '/getdetails/{timestamp?}', 'Brotzka\DotenvEditor\Http\Controller\EnvController@getDetails');
 
-            Route::get(config('dotenveditor.route') . '/test', '\App\Http\Controllers\EnvController@test');
         });
 }
